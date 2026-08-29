@@ -1,6 +1,6 @@
 # AI Content Tool — Product Roadmap
 
-## Phase 1 — Free MVP (implemented)
+## Phase 1 — Free MVP
 - [x] Article / blog generator
 - [x] Social posts / captions
 - [x] Ad copy
@@ -23,12 +23,13 @@
 - [x] Provider-agnostic generation API with no-key fallback
 
 ## Phase 2 — Free product quality
-- [ ] More templates by niche
-- [ ] Saved folders / projects
-- [ ] Richer editor tools
-- [ ] CSV/bulk input for free-sized batches
-- [ ] Better accessibility and keyboard shortcuts
-- [ ] Automated tests and CI
+- [x] More templates by use case and niche
+- [x] Saved projects / project grouping for history
+- [x] Richer editor tools: shorten, expand, clean, upper/lower/sentence case
+- [x] CSV bulk input within the free generation allowance
+- [x] Accessibility labels, live status and keyboard shortcuts
+- [x] Automated build workflow / CI
+- [x] Export generation history as JSON
 
 ## Phase 3 — Real AI
 - [ ] Connect an AI provider through server-side environment variables
@@ -51,7 +52,7 @@
 
 ## Phase 6 — Growth
 - [ ] Team workspaces
-- [ ] Bulk generation
+- [ ] Advanced bulk generation
 - [ ] Content calendar
 - [ ] WordPress integration
 - [ ] Public API
@@ -59,4 +60,4 @@
 - [ ] Browser extension
 
 ## Current scope
-Payment APIs are intentionally excluded until payment credentials/provider decisions are supplied. The free MVP should remain usable without a paid API key.
+Payment APIs are intentionally excluded until payment credentials/provider decisions are supplied. The free product remains usable without a paid AI API key; the current generation endpoint uses a deterministic no-key fallback until a real provider is configured.
