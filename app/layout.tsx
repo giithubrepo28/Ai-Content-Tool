@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'AI Content Tool — Free AI Writing Workspace',
-  description: 'Create articles, social posts, ad copy, SEO content, rewrites and product descriptions.',
+  title: 'Elaria — Anime Fantasy Stories',
+  description: 'A premium anime-inspired fantasy reading universe.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
