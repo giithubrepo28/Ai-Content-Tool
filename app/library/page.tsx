@@ -1,0 +1,3 @@
+'use client';
+import {useState} from 'react';
+export default function Library(){const [tab,setTab]=useState('Favorites');return <main className="innerPage"><header className="innerHero"><div className="eyebrow"><span/> YOUR PERSONAL SPACE</div><h1>Your <em>library.</em></h1><p>Keep your favorite worlds close and return whenever the story calls.</p></header><div className="libraryTabs">{['Favorites','Reading history','Following'].map(x=><button className={tab===x?'selected':''} onClick={()=>setTab(x)} key={x}>{x}</button>)}</div><section className="emptyLibrary"><div>♡</div><h2>{tab} awaits.</h2><p>Your collection is empty for now. Discover a world and make it yours.</p><button className="primary">Explore stories <b>↗</b></button></section></main>}
