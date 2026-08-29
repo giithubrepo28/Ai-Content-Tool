@@ -1,0 +1,5 @@
+'use client';
+import { useState } from 'react';
+const items=['All stories','Romance','Fantasy','Adventure','Mystery','Isekai','Supernatural'];
+const cards=['Moonlit Promise','Crimson Eclipse','Starlight Academy','Whispering Realm','Velvet Moon','The Last Star'];
+export default function Explore(){const [filter,setFilter]=useState('All stories');return <main className="innerPage"><header className="innerHero"><div className="eyebrow"><span/> DISCOVER SOMETHING NEW</div><h1>Explore <em>the realms.</em></h1><p>Wander through stories filled with magic, romance, mystery and impossible adventures.</p></header><div className="filterBar">{items.map(x=><button className={filter===x?'selected':''} onClick={()=>setFilter(x)} key={x}>{x}</button>)}</div><section className="exploreGrid">{cards.map((x,i)=><article className="exploreCard" key={x}><div className={'exploreCover e'+i}><b>0{i+1}</b><span>✦</span></div><small>{filter==='All stories'?'FANTASY · ROMANCE':filter.toUpperCase()}</small><h2>{x}</h2><p>A beautiful world waiting beyond the next page.</p><button>Enter story ↗</button></article>)}</section></main>}
